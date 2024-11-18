@@ -12,7 +12,6 @@
 
 
 header ul li, .barraReserva, footer .options-footer a, footer .redes a{
-
     font-family: "Inter", sans-serif;
     font-weight: normal;
     font-size: 16px;
@@ -32,7 +31,6 @@ header ul li, .barraReserva, footer .options-footer a, footer .redes a{
     color: #9E9A9A;
     font-size: 16px;
 }
-
 
 .socios article div h2{
     font-family: "Inter", sans-serif;
@@ -209,7 +207,6 @@ section div a{
 
 
 .socios {
-
     background-color: #F2F6F6;
     display: flex;
     flex-direction: column;
@@ -258,9 +255,7 @@ section div a{
     object-fit: cover;
 }
 
-
 .socios article div a{
-
 
     background-color: #A3A656;
     color: #FFFFFF;
@@ -273,15 +268,15 @@ section div a{
     width: 50%;
     height: 25px;
     justify-content: center;
-    align-items: center;}
-
+    align-items: center;
+    
+}
 
 .socios article div h2{
     margin-top: 10px;
     font-size: 28px;
-    text-transform: uppercase;}
-
-    
+    text-transform: uppercase;
+}
 
 .socios article div ul li{
     text-align: left;
