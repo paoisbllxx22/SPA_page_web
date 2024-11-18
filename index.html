@@ -1,167 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>SPA-Jodos</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav>
+        <ul class="menu">
+            <li><a href="">Promociones</a></li>
+            <li><a href="">Fotos</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Mapa</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+        <ul class="menu menu1">
+            <li><a href=""> <img class="img_user" src="images/user.png" alt="imagen-user"> Mi cuenta</a></li>
+            <li><a href="">ES<img class="img_flag" src="images/flag.png" alt="imagen-flag"><img class="img_arrow"
+                        src="images/arrow.png" alt="imagen-arraow"></a></li>
+        </ul>
+    </nav>
 
     <main>
 
-        <header>
-            
-            <ul>
-            <li><a href="#"> Promociones</a></li>
-            <li><a href="#"> Fotos</a></li>
-            <li><a href="#"> Servicio</a></li>
-            <li><a href="#">Mapa</a></li>
-            <li><a href="#">Contacto</a></li>
-            </ul> 
-
-
-            <div class="header-options">
-                <img src="images/user.png" alt="user">
-
-                <div class=options-text>
-
-                    <a href="#" style="margin-right: 20px;">Mi cuenta</a>
-                    <span style="margin-right: 10px">ES</span>
-
-                </div>
-                <img src="images/flag.png" alt="flag">
-                <img src="images/arrow.png" alt="arrow" id="botton-change-language">
-
-            </div>
-        </header>
-
-
-        <div class="inicio"> 
-            <h1> SPA-Jodos</h1>
-
-            <h2> Regálate un momento de paz y <br> consiente a tu piel en el mejor lugar</h2>
-        </div class="inicio">
-
-        <div class="barraReserva">
-            <span>Reserva tu cita:</span>
-            <input style="width: 250px;" type="text" name="reserva">
-            <span>Código promocional:</span>
-            <input type="text" name="codido-promocional" value="CODIGO">
+        <div class="portada">
+            <h1 class="titulo_portada">SPA - Jodos</h1>
+            <h2>Regálate un momento de paz y<br> consiente a tu piel en el mejor lugar</h2>
         </div>
 
-        <section>
-            <div>
+        <div>
+            <form class="menu">
+                RESERVA TU CITA: <input type="text">
+                Código promocional : <input class="input_menu placeholder" type="text" placeholder="   CODIGO">
+            </form>
+        </div>
 
-                <h2>Masaje de pies</h2>
-                <img src="images/pies.png" alt="oferta1">
-                <p> Esta es una descripcion de la opción en cuestión ....</p>
-
-                <span> 50$</span>
-                <a href="#">Reservar</a>
+        <div class="card-contariner">
+            <div class="card">
+                <div class="card_title">
+                    <h2>Masaje de pies</h2>
+                </div>
+                <div class="card_img">
+                    <img src="images/pies.png" alt="img-pies">
+                </div>
+                <p>Esta es una descripcion de la opción en <br> cuestión .....</p>
+                <div class="card_union">
+                    <h2>$65</h2>
+                    <input class="miniatura" type="button" value="RESERVAR">
+                </div>
             </div>
-
-            <div>
-                <h2>Masaje relajante</h2>
-                <img src="images/relajante.png" alt="oferta2">
-                <p> Esta es una descripcion de la opción en cuestión  .... </p>
-                <span> 50$ </span>
-                <a href= "#">Reservar</a>
+            <div class="card">
+                <div class="card_title">
+                    <h2>Masaje relajante</h2>
+                </div>
+                <div class="card_img">
+                    <img src="images/relajante.png" alt="img-pies">
+                </div>
+                <p>Esta es una descripcion de la opción en <br> cuestión .....</p>
+                <div class="card_union">
+                    <h2>$60</h2>
+                    <input class="miniatura" type="button" value="RESERVAR">
+                </div>
             </div>
-
-            <div>
-                <h2> Masaje con bambú </h2>
-                <img  src="images/bambu.png" alt="oferta3">
-                <p>   Esta es una descripcion de la opción en cuestión ....</p>
-
-
-
-                <span>   50$</span>
-                <a href="#">Reservar</a>
+            <div class="card">
+                <div class="card_title">
+                    <h2>Masaje con bambú</h2>
+                </div>
+                <div class="card_img">
+                    <img src="images/bambu.png" alt="img-pies">
+                </div>
+                <p>Esta es una descripcion de la opción en <br> cuestión .....</p>
+                <div class="card_union">
+                    <h2>$58</h2>
+                    <input class="miniatura" type="button" value="RESERVAR">
+                </div>
             </div>
-        </section>
+        </div>
 
-        <div class="socios">
-            <h1>Haste socio y prueba nuestros beneficios</h1>
-
-            <article>
-                <div>
-                    <div class = "c1">
-                        <img src="images/gold.png" alt="gold">
-                    </div class = "c1">
+        <div class="bloque_socios">
+            <h2>Haste socio y prueba nuestros beneficios</h2>
+            <div class="socio_card_contariner">
+                <div class="socio_card">
+                    <div class="socio_card_img">
+                        <img src="images/gold.png" alt="img-socio1">
+                    </div>
                     <h2>Gold</h2>
-                    <a href="#">Ver condiciones</a>
-                    <ul>
+                    <input type="button" value="Ver Condiciones">
+                    <div class="miniatura">
                         <li>Gimnasio</li>
                         <li>Piscina</li>
                         <li>Todos los tratamientos</li>
-                    </ul>
-
+                    </div>
                 </div>
 
-                <div>
-                    <div class = "c1">
-                        <img src="images/premium.png" alt="premium">
-                    </div class = "c1">
-                    <h2>Premium</h2>
-                    <a href="#">Ver condiciones</a>
-                    <ul>
-                        <li>Gimnasio</li>
+                <div class="socio_card">
+                    <div class="socio_card_img">
+                        <img src="images/premium.png" alt="img-socio1">
+                    </div>
+                    <h2>PREMIUM</h2>
+                    <input type="button" value="Ver Condiciones">
+                    <div class="miniatura tamanio">
+                        <li>Piscina</li>
                         <li>Todos los tratamientos</li>
-                    </ul>
-
+                    </div>
                 </div>
 
-                <div>
-                    <div class = "c1">
-                        <img src="images/plate.png" alt="plate">
-                    </div class = "c1">
-                    <h2>Plate</h2>
-                    <a href="#">Ver condiciones</a>
-                    <ul>
+                <div class="socio_card">
+                    <div class="socio_card_img">
+                        <img src="images/plate.png" alt="img-socio1">
+                    </div>
+                    <h2>PLATE</h2>
+                    <input type="button" value="Ver Condiciones">
+                    <div class="miniatura tamanio">
                         <li>Tratamientos faciales</li>
-                    </ul>
-
+                    </div>
                 </div>
-            </article>
-        </div class="socios">
-        
-        
-        
-        
-        <footer>
+            </div>
+        </div>
 
-            <div class = "options-footer">
+        <nav class="footer menu">
+            <div class="orientacion">
                 <ul>
-                    <li><a href="#">Políticas de cookies</a></li>
-                    <li><a href="#">Aviso legar</a></li>
-                    <li><a href="#">Protección de datos</a></li>
-                    <li><a href="#">Mapa del sitio</a></li>
+                    <li><a href="">Politicas de cookies</a></li>
+                    <li><a href="">aviso legal</a></li>
+                    <li><a href="">protección de datos</a></li>
+                    <li><a href="">mapa del sitio</a></li>
                 </ul>
-            </div class = "options-footer">
-            <div class = "redes">
-
-                <ul>
-
-                    <a href="#">Síguenos en</a>
-                    <img src="images/rs_facebook.png" alt="facebook">
-                    <img src="images/rs_twiter.png" alt="twitter">
-                    <img src="images/rs_youtube.png" alt="youtube">
-
-
-                </ul>
-
-            </div class = "redes">
-
-        </footer>
-
+            </div>
+            <ul class="redes_sociales">
+                <li><a href="">SíGUENOS EN</a></li>
+                <li><a href=""><img class="img_facebook" src="images/rs_facebook.png" alt="link_a_facebook"></a></li>
+                <li><a href=""><img class="img_twiter" src="images/rs_twiter.png" alt="link_a_twitter"></a></li>
+                <li ><a href=""><img class="img_youtube" src="images/rs_youtube.png" alt="link_a_youtube"></a></li>
+            </ul>
+        </nav>        
     </main>
 
-</body>
 
+</body>
 
 </html>

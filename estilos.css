@@ -1,0 +1,362 @@
+/*Estilos de letras*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Romanesco&display=swap');
+
+
+/*Configuracion de la pagina*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Tipo de letra, color y tamanio*/
+
+h1 {
+    /*font-family: 'Inter Bold', sans-serif;*/
+    font-family: 'Inter Bold', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+h2 {
+    /*font-family: 'Inter SemiBold', sans-serif;*/
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+p {
+    /*font-family: 'Inter Regular', sans-serif;*/
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.miniatura{
+    /*font-family: 'Inter Regular', sans-serif;*/
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+
+.menu,
+.placeholder {
+    /*font-family: 'Inter Regular', sans-serif;*/
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.menu {
+    text-transform: uppercase;
+}
+
+.placeholder {
+    color: #9E9A9A;
+}
+
+.titulo_portada {
+    /*font-family: 'Romanesco Regular', sans-serif;*/
+    font-family: "Romanesco", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+
+}
+
+
+/*Configuracion de la pagina*/
+
+nav {
+    padding: 0 0 0 70px;
+    height: 70px;
+    background: #A3A656;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    border: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #FFFF00;
+}
+
+nav ul.menu1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img_flag {
+    width: 40px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.img_user {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.img_arrow {
+    width: 10px;
+    height: 10px;
+
+}
+
+.menu1 a {
+    text-transform: initial;
+    font-size: 12px;
+}
+
+.portada {
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/main.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.portada h1 {
+    text-align: left;
+    margin: 0 0 2% 15%;
+}
+
+.portada h2 {
+    text-align: left;
+    margin: 0 0 10% 15%;
+}
+
+form{
+    height: 100px;
+    background: #F2F6F6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 15%;
+}
+
+form input{
+    border: 1px solid #FFF;
+    border-radius: 13px;
+    height: 50%;
+    width: 25%;
+}
+
+.input_menu{
+    border: 1px solid #FFF;
+    border-radius: 13px;
+    height: 50%;
+    width: 20%;
+    text-align: left;
+}
+
+
+.card-contariner{
+    margin-top: 100px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-around;
+    gap: 134px;
+}
+
+.card{
+    height: 430px;
+    width: 330px; 
+}
+
+.card_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    border-radius: 15px 15px 0 0;
+    background: #A3A656;
+    color: #FFF;
+}
+
+.card .card_img{
+    width: 100%;
+    height: 250px;
+}
+
+.card .card_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 50px;
+}
+
+.card_union{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card_union input{
+    border: none;
+    border-radius: 35px;
+    background: #A3A656;
+    color: #FFF;
+    height: 70%;
+    width: 50%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card_union input:hover{
+    background: #384001;
+    cursor: pointer;
+}
+
+.bloque_socios{
+    background: #F2F6F6;
+    height: 770px;
+}
+
+.bloque_socios h2{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socio_card_contariner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.socio_card{
+    height: 600px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.socio_card_img{
+    border: 11px solid #384001;
+    background-color: #FFF;
+    border-radius: 50%;
+    height: 233px;
+    width: 233px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socio_card img{
+    width: 50%;
+    height: 50%;    
+}
+.socio_card h2{
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    height: 32px;
+    text-transform: uppercase;
+}
+.socio_card input{
+    border: none;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    background: #A3A656;
+    color: #FFF;
+    height: 9%;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.socio_card input:hover{
+    background: #384001;
+    cursor: pointer;
+}
+
+.socio_card li{
+    margin-bottom: 5px;
+}
+
+.socio_card .tamanio{
+    height: 61px;
+}
+
+
+.footer{
+    background: #384001;
+    height: 97px;
+    
+    padding: 0 0 0 70px;
+    display: flex;  
+    justify-content: space-between;
+}
+
+.footer ul li a{
+    color: #A3A656;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.redes_sociales{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+
+.orientacion ul{
+    display: flex;
+    gap: 40px;
+}
+
+.img_facebook{
+    height: 40px;
+    width: 40px;
+}
+
+.img_twiter{
+    height: 30px;
+    width: 35px;
+}
+
+.img_youtube{
+    height: 25px;
+    width: 35px;
+}
+
+
